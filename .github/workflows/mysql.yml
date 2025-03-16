@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DB_DATABASE: test_db
-      DB_USER: root
-      DB_PASSWORD: root
+      DB_DATABASE: employees
+      DB_USER: shashankthemoon
+      DB_PASSWORD: #July1992
 
     steps:
       - name: Checkout code
@@ -22,4 +22,4 @@ jobs:
 
       - name: Start MySQL
         run: |
-          mysql -u shashankthemoon -h 34.46.175.15 -P 3307 employees --password=#July1992 < query.sql
+          mysql -u  $DB_USER -h 34.46.175.15 -P 3307  $DB_DATABASE --password=$DB_PASSWORD < query.sql
