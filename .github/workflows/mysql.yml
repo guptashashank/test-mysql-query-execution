@@ -14,7 +14,7 @@ jobs:
     env:
       DB_DATABASE: employees
       DB_USER: shashankthemoon
-      DB_PASSWORD: #July1992
+      DB_PASSWORD: '#July1992'
 
     steps:
       - name: Checkout code
