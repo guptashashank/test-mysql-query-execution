@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      SUPER_SECRET: ${{ secrets.DB_PASSWORD }}
       DB_DATABASE: employees
       DB_USER: shashankthemoon
 
@@ -21,4 +22,4 @@ jobs:
 
       - name: Start MySQL
         run: |
-          mysql -u  $DB_USER -h 34.46.175.15 -P 3307  $DB_DATABASE --password=$DB_PASSWORD < query.sql
+          mysql -u  $DB_USER -h 34.46.175.15 -P 3307  $DB_DATABASE --password=$SUPER_SECRET < query.sql
