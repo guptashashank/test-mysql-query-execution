@@ -22,4 +22,4 @@ jobs:
 
       - name: Start MySQL
         run: |
-          mysql -u shashankthemoon -h 34.46.175.15 -P 3307 employees --password=#July1992 -e "select * from departments;"
+          mysql -u shashankthemoon -h 34.46.175.15 -P 3307 employees --password=#July1992 < query.sql
