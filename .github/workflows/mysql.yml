@@ -22,4 +22,4 @@ jobs:
 
       - name: Start MySQL
         run: |
-          mysql -u  $DB_USER -h 34.46.175.15 -P 3307  $DB_DATABASE --password=$SUPER_SECRET < query.sql
+          mysql -u  $DB_USER -h 35.226.104.166 -P 3307  $DB_DATABASE --password=$SUPER_SECRET < query.sql
