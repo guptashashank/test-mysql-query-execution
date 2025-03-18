@@ -1,2 +1,2 @@
 #!/bin/sh
-mysql -u shashankthemoon -h 34.46.175.15 -P 3307 employees --password=#July1992 -e "select * from departments;"
+mysql -u shashankthemoon -h 130.211.217.90 -P 3307 employees --password=<db_password> -e "select * from employees where emp_no=1001;"
